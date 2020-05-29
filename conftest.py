@@ -20,5 +20,5 @@ def browser(request):
                                     {"intl.accept_languages": language})
     browser = webdriver.Chrome(options=options)
     yield browser
-    time.sleep(10)
+    time.sleep(30)
     browser.quit()
